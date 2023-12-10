@@ -2,36 +2,42 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
 
-export const Menu = ()=> {
-    return(
+export const Menu = () => {
+    return (
         <StyledMenu>
-                <ul>
-                    <li>
-                        <Icon iconId="search"/>
-                    </li>
-                    <li>
-                        <Icon iconId="basket"/>
-                    </li>
-                    <li>
-                        <Icon iconId="user"/>
-                    </li>
-                </ul>
-            </StyledMenu>
-    )
-}
+            <StyledMenuList>
+                <StyledMenuItem>
+                    <Icon iconId="search" />
+                </StyledMenuItem>
+                <StyledMenuItem>
+                    <Icon iconId="basket" />
+                </StyledMenuItem>
+                <StyledMenuItem>
+                    <Icon iconId="user" />
+                </StyledMenuItem>
+            </StyledMenuList>
+        </StyledMenu>
+    );
+};
 
 const StyledMenu = styled.nav`
-    ul{
-        display: flex;
-        gap: 90px;
-        
-        li{
-            list-style-type: none;
-            box-sizing: border-box;
-            width: 47px;
-            height: 47px;
-            background-color: #fff;
-            border-radius: 50%;
-        }
-    }
-`
+    height: 75px;    
+`;
+
+const StyledMenuList = styled.ul`
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+`;
+
+const StyledMenuItem = styled.li`
+    list-style-type: none;
+    box-sizing: border-box;
+    width: 47px;
+    height: 47px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { MultiplyCircle } from "../../../components/multiplyCircle/MultiplyCircle";
+import { Icon } from "../../../components/icon/Icon";
 
 
 
 type PropertyType = {
-    imageSrc: string;
+    iconId: string;
     name: string;
     description: string;
     info: string;
@@ -13,7 +15,9 @@ type PropertyType = {
 export const Property = (props: PropertyType)=>{
     return(
         <PropertyWrapper>
-            <PropertyPicture src={props.imageSrc}/>
+            <IconWrapper>
+                <Icon iconId={props.iconId} width="36" height="36" viewBox="0 0 36 36"/>
+            </IconWrapper>
             <PropertyTextWrapper>
                 <PropertyName>{props.name}</PropertyName>
                 <PropertyDescription>{props.description}</PropertyDescription>
@@ -28,6 +32,11 @@ export const Property = (props: PropertyType)=>{
 
 
 export const PropertyWrapper = styled.div`
+    display: flex;
+    align-items: center;
+
+`
+export const IconWrapper = styled.div`
 
 `
 export const PropertyPicture = styled.img`

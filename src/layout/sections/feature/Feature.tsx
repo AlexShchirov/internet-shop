@@ -14,19 +14,19 @@ export const Feature = () => {
                         Good headphones and loud music is all you need
                     </SectionTitle>
                     <Property
-                        imageSrc={""}
+                        iconId={"battery"}
                         name={"Battery"}
                         description={"Battery 6.2V-AAC codec"}
                         info={"Lern More"}
                     />
                     <Property
-                        imageSrc={""}
+                        iconId={"bluetooth"}
                         name={"Bluetooth"}
                         description={"Battery 6.2V-AAC codec"}
                         info={"Lern More"}
                     />
                     <Property
-                        imageSrc={""}
+                        iconId={"microphone"}
                         name={"Microphone"}
                         description={"Battery 6.2V-AAC codec"}
                         info={"Lern More"}
@@ -41,7 +41,7 @@ export const Feature = () => {
 const FeatureWrapper = styled.section`
     height: 100vh;
     margin: 0 0 50px 0;
-`
+`;
 const PropertyWrapper = styled.article``;
 
 const Photo = styled.img`
