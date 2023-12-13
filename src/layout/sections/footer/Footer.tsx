@@ -9,7 +9,9 @@ export const Footer = () => {
         <FooterWrapper>
             <FlexWrapper direction="row" justify="space-around" align="center">
                 <PhotoWrapper>
-                    <Photo src={photo} alt="" />
+                    <a href="">
+                        <Photo src={photo} alt="" />
+                    </a>
                 </PhotoWrapper>
 
                 <FooterListWrapper>
@@ -27,36 +29,36 @@ export const Footer = () => {
                 </FooterListWrapper>
                 <SocialListWpapper>
                     <SocialList>
-                        <li>
-                            <IconCircle>
+                        <Item>
+                            <a href="">
                                 <Icon
                                     iconId={"inst"}
                                     width={"20"}
                                     height={"20"}
                                     viewBox="0 0 22 22"
                                 />
-                            </IconCircle>
-                        </li>
-                        <li>
-                            <IconCircle>
+                            </a>
+                        </Item>
+                        <Item>
+                            <a href="">
                                 <Icon
                                     iconId={"twitter"}
                                     width={"20"}
                                     height={"20"}
                                     viewBox="0 0 22 22"
                                 />
-                            </IconCircle>
-                        </li>
-                        <li>
-                            <IconCircle>
+                            </a>
+                        </Item>
+                        <Item>
+                            <a href="">
                                 <Icon
                                     iconId={"facebook"}
                                     width={"20"}
                                     height={"20"}
                                     viewBox="0 0 22 22"
                                 />
-                            </IconCircle>
-                        </li>
+                            </a>
+                        </Item>
                     </SocialList>
                 </SocialListWpapper>
             </FlexWrapper>
@@ -89,7 +91,7 @@ const LinkList = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px
+    gap: 20px;
 `;
 
 const SocialListWpapper = styled.nav`
@@ -105,7 +107,7 @@ const SocialList = styled.ul`
     list-style-type: none;
     gap: 40px;
 `;
-const IconCircle = styled.span`
+const Item = styled.li`
     display: inline-block;
     width: 40px;
     height: 40px;

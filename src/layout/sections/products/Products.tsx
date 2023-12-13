@@ -9,9 +9,9 @@ import photo_3 from "./../../../assets/images/product_headfones_green.webp";
 
 export const Products = () => {
     return(
-        <FlexWrapper direction="column">
+        <FlexWrapper direction="column"> 
             <SectionTitle>Our Latest Product</SectionTitle>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis nunc ipsum aliquam, ante.</span>
+            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis nunc ipsum aliquam, ante.</Text>
             <ProductsWrapper>
                 <Product imageSrc={photo_1} value={"4.50"} name={"Read Headphone"} price={"$ 256"}/>
                 <Product imageSrc={photo_2} value={"4.50"} name={"Blue Headphone"} price={"$ 235"}/>
@@ -22,5 +22,7 @@ export const Products = () => {
     )
 }
 
-const ProductsWrapper = styled.div`
+const ProductsWrapper = styled.article`
 text-align: center;`
+
+const Text = styled.p``

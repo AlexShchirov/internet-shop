@@ -33,8 +33,8 @@ const StyledMenuList = styled.ul`
 const StyledMenuItem = styled.li`
     list-style-type: none;
     box-sizing: border-box;
-    width: 47px;
-    height: 47px;
+    width: 48px;
+    height: 48px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;

@@ -14,14 +14,14 @@ export const Main = () => {
                     <MainTitle>Move with the music</MainTitle>
                     <Price>$ 435 </Price>
                     <PriceUnderline>$ 465 </PriceUnderline>
-                    <Button>BUY NOW</Button>
+                    <Link href="">BUY NOW</Link>
                 </MainDescription>
             </FlexWrapper>
         </StyledMain>
     );
 };
 
-const StyledMain = styled.main`
+const StyledMain = styled.section`
     min-height: 100vh;
     background-color: #bafaa1;
 `
@@ -39,7 +39,7 @@ const Photo = styled.img`
 const MainTitle = styled.h1`
     
 `
-const Slogan = styled.h4`
+const Slogan = styled.p`
     
 `
 const Price=styled.span`
@@ -48,6 +48,6 @@ const Price=styled.span`
 const PriceUnderline=styled.span`
     text-decoration: line-through;
 `
-const Button = styled.button`
+const Link = styled.a`
     display: block;
 `
