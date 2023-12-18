@@ -38,6 +38,7 @@ const ProductWrapper = styled.div`
 const ProductImage = styled.img`
     width: 268px;
     height: 366px;
+    object-fit: cover;
     
 
 `;

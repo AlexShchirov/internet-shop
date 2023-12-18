@@ -21,8 +21,8 @@ export const BurgerMenu = () => {
 
 const Logolink = styled.a`
     img {
-        width: 140px;
-        height: 73px;
+        width: 100px;
+        height: 50px;
         flex-shrink: 0;
     }
 `;

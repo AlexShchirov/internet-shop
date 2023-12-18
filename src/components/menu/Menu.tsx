@@ -21,7 +21,7 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
-    height: 75px;    
+    height: 50px;    
 `;
 
 const StyledMenuList = styled.ul`
