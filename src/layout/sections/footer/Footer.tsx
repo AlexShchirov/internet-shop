@@ -3,71 +3,77 @@ import styled from "styled-components";
 import photo from "./../../../assets/images/logotype.png";
 import { Icon } from "../../../components/icon/Icon";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Container } from "../../../components/Container";
 
 export const Footer = () => {
     return (
         <FooterWrapper>
-            <FlexWrapper direction="row" justify="space-around" align="center">
-                <PhotoWrapper>
-                    <a href="">
-                        <Photo src={photo} alt="" />
-                    </a>
-                </PhotoWrapper>
+            <Container>
+                <FlexWrapper
+                    justify="space-around"
+                    align="center"
+                >
+                    <PhotoWrapper>
+                        <a href="">
+                            <Photo src={photo} alt="" />
+                        </a>
+                    </PhotoWrapper>
 
-                <FooterListWrapper>
-                    <LinkList>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Product</a>
-                        </li>
-                    </LinkList>
-                </FooterListWrapper>
-                <SocialListWpapper>
-                    <SocialList>
-                        <Item>
-                            <a href="">
-                                <Icon
-                                    iconId={"inst"}
-                                    width={"20"}
-                                    height={"20"}
-                                    viewBox="0 0 22 22"
-                                />
-                            </a>
-                        </Item>
-                        <Item>
-                            <a href="">
-                                <Icon
-                                    iconId={"twitter"}
-                                    width={"20"}
-                                    height={"20"}
-                                    viewBox="0 0 22 22"
-                                />
-                            </a>
-                        </Item>
-                        <Item>
-                            <a href="">
-                                <Icon
-                                    iconId={"facebook"}
-                                    width={"20"}
-                                    height={"20"}
-                                    viewBox="0 0 22 22"
-                                />
-                            </a>
-                        </Item>
-                    </SocialList>
-                </SocialListWpapper>
-            </FlexWrapper>
+                    <FooterListWrapper>
+                        <LinkList>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Product</a>
+                            </li>
+                        </LinkList>
+                    </FooterListWrapper>
+                    <SocialListWpapper>
+                        <SocialList>
+                            <Item>
+                                <a href="">
+                                    <Icon
+                                        iconId={"inst"}
+                                        width={"20"}
+                                        height={"20"}
+                                        viewBox="0 0 22 22"
+                                    />
+                                </a>
+                            </Item>
+                            <Item>
+                                <a href="">
+                                    <Icon
+                                        iconId={"twitter"}
+                                        width={"20"}
+                                        height={"20"}
+                                        viewBox="0 0 22 22"
+                                    />
+                                </a>
+                            </Item>
+                            <Item>
+                                <a href="">
+                                    <Icon
+                                        iconId={"facebook"}
+                                        width={"20"}
+                                        height={"20"}
+                                        viewBox="0 0 22 22"
+                                    />
+                                </a>
+                            </Item>
+                        </SocialList>
+                    </SocialListWpapper>
+                </FlexWrapper>
+            </Container>
         </FooterWrapper>
     );
 };
 
 const FooterWrapper = styled.div`
-    height: 30vh;
+    height: 10vh;
     margin-top: 50px;
     background-color: #e86564;
 `;
