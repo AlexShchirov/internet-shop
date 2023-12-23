@@ -22,7 +22,6 @@ export const Subscribe = () => {
 };
 
 const SubscribeWrapper = styled.section`
-    margin-top: 150px;
     padding-top: 50px;
     text-align: center;
     justify-content: center;

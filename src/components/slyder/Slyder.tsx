@@ -10,6 +10,12 @@ type SlidePropsType = {
     image: string;
 };
 
+const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+};
+
 const Slide = (props: SlidePropsType) => {
     return (
         <SSlide>
@@ -26,16 +32,21 @@ const images = [
 
 export const Slider = () => (
     <SSlider>
-        <AliceCarousel mouseTracking items={images} />
+        <AliceCarousel mouseTracking items={images} responsive={responsive} />
     </SSlider>
 );
 
 const SSlider = styled.div`
-    background-color: #ff6767;
+
 `;
+
+
 const SSlide = styled.div`
-    background-color: #fbbce0;
     text-align: center;
+    border-radius: 30px;
+    border: 1px solid rgba(125, 117, 117, 0.3);
+
+    
 `;
 
 const Image = styled.img`

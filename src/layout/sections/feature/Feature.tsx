@@ -44,7 +44,7 @@ export const Feature = () => {
 };
 
 const FeatureWrapper = styled.section`
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 0 50px 0;
 `;
 const PropertyWrapper = styled.article``;

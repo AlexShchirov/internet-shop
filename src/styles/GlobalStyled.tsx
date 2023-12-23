@@ -31,4 +31,7 @@ button{
     background-color: unset;
     border: none;
 }
+section{
+    margin: 0 0 130px 0;
+}
 `;

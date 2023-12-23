@@ -16,5 +16,5 @@ export const LatestCollection = () => {
 };
 
 const StyledLatestCollection = styled.section`
-    background-color: #f4ffc4;
+    
 `;
